@@ -17,7 +17,7 @@ const navLinks = [
     },
 ];
 
-const mocktailLists = [
+const popmocktailLists = [
     {
         name: "Chapel Hill Shiraz",
         country: "AU",
@@ -44,7 +44,7 @@ const mocktailLists = [
     },
 ];
 
-const mockTailLists = [
+const lovemockTailLists = [
     {
         name: "Tropical Bloom",
         country: "US",
@@ -171,8 +171,8 @@ const sliderLists = [
 
 export {
     navLinks,
-    mocktailLists,
-    mockTailLists,
+    popmocktailLists,
+    lovemockTailLists,
     profileLists,
     featureLists,
     goodLists,
