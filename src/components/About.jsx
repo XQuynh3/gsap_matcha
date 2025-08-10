@@ -13,7 +13,7 @@ const About = () => {
 
         const scrollTimeline = gsap.timeline({
             scrollTrigger: {
-                triggrer: '#about',
+                trigger: '#about',
                 start: 'top center'
             }
         })

@@ -25,10 +25,10 @@ const Navbar = () => {
 
     return (
         <nav>
-            <div className="flex justify-between items-center px-6 max-w-7xl mx-auto">
+            <div className="flex justify-between items-center px-4 w-full">
                 <a href="#home" className= "flex items-center gap-2 ">
-                    <img src="/images/logo.png" alt="logo" className="w-10 h-10 object-contain" />
-                    <p>Chaé</p>
+                    <img src="/images/logo.png" alt="logo" className="w-25 h-25 object-contain" />
+                    <p className="text-3xl">Elyxir</p>
 
                 </a>
 

@@ -7,19 +7,19 @@ import {useRef} from "react";
 
 gsap.registerPlugin(ScrollTrigger, SplitText, useGSAP);
 
-const Hero = () => {
+const Home = () => {
     const videoRef = useRef(null);
 
     const isMobile = useMediaQuery( {maxWidth: 767 });
 
 
     useGSAP(() => {
-        const heroSplit = new SplitText('.title', { type: 'chars, words'});
+        const homeSplit = new SplitText('.title', { type: 'chars, words'});
         const paragraphSplit = new SplitText('.subtitle', { type: 'lines'});
 
-        heroSplit.chars.forEach((char) => char.classList.add('text-gradient'));
+        homeSplit.chars.forEach((char) => char.classList.add('text-gradient'));
 
-        gsap.from(heroSplit.chars, {
+        gsap.from(homeSplit.chars, {
             yPercent: 100,
             duration: 1.8,
             ease: 'expo.out',
@@ -37,7 +37,7 @@ const Hero = () => {
 
         gsap.timeline({
             scrollTrigger: {
-                trigger: '#hero',
+                trigger: '#home',
                 start: 'top top',
                 end: 'bottom top',
                 scrub: true,
@@ -73,7 +73,7 @@ const Hero = () => {
 
     return (
        <>
-        <section id = "hero" className="noisy">
+        <section id = "home" className="noisy">
             <h1 className="title">MIMOSA</h1>
 
             <img src= "/images/hero-left-leaf.png"
@@ -98,7 +98,7 @@ const Hero = () => {
                         <p className="subtitle">
                             Every mocktail on our menu is a vibrant blend of fresh ingredients, imaginative flavors, and pure refreshment — designed to elevate your spirits without the spirits.
                         </p>
-                        <a href = "#mocktails">View Mocktails</a>
+                        <a href = "#Mocktails">View Mocktails</a>
                     </div>
                 </div>
             </div>
@@ -121,4 +121,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Home;
